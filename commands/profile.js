@@ -17,8 +17,6 @@ module.exports = {
                     chessAPI.getPlayerStats(args[0])
                         .then(function(response){
                         const playerStats = response.body
-                        console.log(player)
-                        console.log(playerStats)
                         data = setData(player, playerStats)
                         return message.channel.send(data);
                 });
@@ -59,8 +57,6 @@ function setData(player, playerStats) {
     }else{
         avatarURL = "https://pranav-suri.com/wp-content/uploads/2021/01/chesscom_pawn-1.jpg";
     }
-    console.log(player.username);
-    console.log(player.avatarURL);
     const exampleEmbed = new Discord.MessageEmbed()
         .setColor('#0099ff')
         .setTitle(name+'\'s Profile 🔗')
