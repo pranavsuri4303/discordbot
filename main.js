@@ -5,7 +5,7 @@ const chessAPI = new ChessWebAPI();
 const Discord = require('discord.js');
 const client = new Discord.Client();
  
-const prefix = '-';
+const prefix = '*';
  
 const fs = require('fs');
  
