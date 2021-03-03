@@ -27,7 +27,7 @@ client.on('message', message =>{
     // if (message.content.includes("Not Rocket Destroyer")){
     //     message.reply('Destroyed');
     // }
-    if !(message.author.bot) && (message.content.includes(Discord.MessageMentions.name("Not Rocket Destroyer"))){
+    if (message.author.bot) === false{
         message.reply(message);
     }    
     // if(!message.content.startsWith(prefix) || message.author.bot) return;
