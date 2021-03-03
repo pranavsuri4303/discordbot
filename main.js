@@ -6,7 +6,7 @@ client.on("ready", () => {
 });
 
 client.on("message", (message) => {
-  if (message.author.bot == false) {
+  if (message.author.bot == false) && (message.content.includes("Not Rocket Destroyer")) {
     message.channel.send(message.content);
   }
 });
