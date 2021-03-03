@@ -7,7 +7,7 @@ client.on("ready", () => {
 
 client.on("message", (message) => {
   if (message.author.bot == false) {
-    message.channel.send("pong!");
+    message.channel.send(message.content);
   }
 });
 
