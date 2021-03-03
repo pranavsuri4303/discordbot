@@ -6,7 +6,7 @@ client.on("ready", () => {
 });
 
 client.on("message", (message) => {
-  if ((message.author.bot == false)) {
+  if (message.mentions.users.has("720902882928361543") && message.author.bot == false) {
     message.channel.send(message.content);
     console.log(message);
   }
