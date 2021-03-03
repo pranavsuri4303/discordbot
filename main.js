@@ -6,7 +6,7 @@ client.on("ready", () => {
 });
 
 client.on("message", (message) => {
-  if (message.content.startsWith("ping")) {
+  if (message.content.startsWith("ping") && !(message.author.bot)) {
     message.channel.send("pong!");
   }
 });
