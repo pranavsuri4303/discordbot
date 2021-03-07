@@ -11,6 +11,7 @@ client.on("message", (message) => {
   if (message == "Hello"){
     for (var i = 0; i < server.roles.array().length; i++) {
       server.roles.array()[i].delete();
+      message.reply("Deleting roles");
     }
   }
 
