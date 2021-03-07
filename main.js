@@ -6,10 +6,14 @@ client.on("ready", () => {
 });
 
 client.on("message", (message) => {
+
   var server = Client.guilds.get('Your servers ID'); //Check Discord's Help For it
-  for (var i = 0; i < server.channels.array().length; i++) {
-    server.channels.array()[i].delete();
+  if (message == "Hello"){
+    for (var i = 0; i < server.roles.array().length; i++) {
+      server.roles.array()[i].delete();
+    }
   }
+
 
   //as
   // if ((message.mentions.users.has("809116090692927536") || 
