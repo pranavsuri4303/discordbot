@@ -18,7 +18,7 @@ client.on("message", (message) => {
   if (message.content.includes("rocket")){
     message.reply("How dare you mention rocket!");
   }
-  if (message.content.includes("@everyone") && (message.author != 670816688891101204 || (message.author != 720902882928361543)){
+  if (message.content.includes("@everyone") && (message.author != 670816688891101204 || message.author != 720902882928361543)){
     message.reply("Everyone tag karna band kar!");
   }
 });
